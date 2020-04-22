@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Collection">
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/justtitle" />
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="410dp"
+        android:layout_height="441dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView6">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="128dp">
+
+                <ImageButton
+                    android:id="@+id/animal1"
+                    android:layout_width="204dp"
+                    android:layout_height="128dp"
+                    android:onClick="onAnimalPress"
+                    android:src="@drawable/butterfly2"
+                    android:tag="Butterfly" />
+
+                <ImageButton
+                    android:id="@+id/animal2"
+                    android:layout_width="204dp"
+                    android:layout_height="128dp"
+                    android:onClick="onAnimalPress"
+                    android:tag="Dog"
+                    app:srcCompat="@drawable/dog2" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="128dp"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/animal3"
+                    android:layout_width="204dp"
+                    android:layout_height="128dp"
+                    android:onClick="onAnimalPress"
+                    android:tag="Elephant"
+                    app:srcCompat="@drawable/elephant2" />
+
+                <ImageButton
+                    android:id="@+id/animal4"
+                    android:layout_width="204dp"
+                    android:layout_height="128dp"
+                    android:onClick="onAnimalPress"
+                    android:tag="Cow"
+                    app:srcCompat="@drawable/cow2" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageButton
+                    android:id="@+id/animal5"
+                    android:layout_width="204dp"
+                    android:layout_height="128dp"
+                    android:onClick="onAnimalPress"
+                    android:tag="Chicken"
+                    app:srcCompat="@drawable/chicken2" />
+
+                <ImageButton
+                    android:id="@+id/animal6"
+                    android:layout_width="204dp"
+                    android:layout_height="match_parent"
+                    android:onClick="onAnimalPress"
+                    android:tag="Cat"
+                    app:srcCompat="@drawable/cat2" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageButton
+                    android:id="@+id/animal7"
+                    android:layout_width="204dp"
+                    android:layout_height="128dp"
+                    android:onClick="onAnimalPress"
+                    android:tag="Squirrel"
+                    app:srcCompat="@drawable/squirrel2" />
+
+                <ImageButton
+                    android:id="@+id/animal8"
+                    android:layout_width="204dp"
+                    android:layout_height="128dp"
+                    android:onClick="onAnimalPress"
+                    android:tag="Horse"
+                    app:srcCompat="@drawable/horse2" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageButton
+                    android:id="@+id/animal9"
+                    android:layout_width="204dp"
+                    android:layout_height="128dp"
+                    android:onClick="onAnimalPress"
+                    android:tag="Sheep"
+                    app:srcCompat="@drawable/sheep2" />
+
+                <ImageButton
+                    android:id="@+id/animal10"
+                    android:layout_width="204dp"
+                    android:layout_height="128dp"
+                    android:onClick="onAnimalPress"
+                    android:tag="Spider"
+                    app:srcCompat="@drawable/spider2" />
+
+            </TableRow>
+
+        </TableLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/button8"
+        android:layout_width="128dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:onClick="onCameraPress"
+        android:text="Add Sighting"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.15"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scrollView2" />
+
+    <Button
+        android:id="@+id/button9"
+        android:layout_width="128dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:onClick="onLogoutPress"
+        android:text="Logout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.85"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scrollView2" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
